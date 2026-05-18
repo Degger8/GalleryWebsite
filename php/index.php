@@ -8,12 +8,17 @@
   </head>
   <body>
     <main>
-        <h1 class = 'text'>Test</h1>  
+      <div class = 'layout'>
         <div class = 'leftBack location'> 
-          <button class = 'buttonStyle'> Hello! </button>
+          <div class = 'buttonPlacement'>
+            <button class = 'buttonStyle'> Hello! </button>
+          </div>
+          <h1 class = 'text titlePlacement'> Test Links </h1>
         </div>
-        <h1 class = 'leftBack location'> Test Links </h1>
-        <h1 class = 'rightBack location'> Test Rechts </h1>
+        <div class = 'rightBack location'>
+          <h1 class = 'text titlePlacement'> Test Rechts </h1>
+        </div>
+      </div>    
     </main>
   </body>
 </html>

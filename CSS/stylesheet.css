@@ -1,6 +1,16 @@
 .text{
     font-family: "Serif", "Times New Roman";
     color: rgb(35, 35, 35);
+    display: block;
+}
+
+.titlePlacement{
+    text-align: center;
+}
+
+.buttonPlacement{
+    align-items: center;
+    justify-content: center;
 }
 
 .buttonStyle{
@@ -8,18 +18,31 @@
     border-width: thin;
 }
 
+.buttonStyle:active{
+    background-color: rgb(75, 162, 132);
+}
+
 .leftBack{
     background-color: rgb(95, 121, 200);
-    margin-top: 10px
+    margin-top: 10px;
+    width: 20%;
+    flex-direction: column;
 }
 
 .rightBack{
     background-color: rgb(147, 84, 167);
+    width: 80%;
 }
 
 .location{
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
+    padding-right: 10px;
     margin: 0px;
+}
+
+.layout{
+    display: flex;
+    height: 97vH;
 }
