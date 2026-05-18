@@ -1,0 +1,25 @@
+.text{
+    font-family: "Serif", "Times New Roman";
+    color: rgb(35, 35, 35);
+}
+
+.buttonStyle{
+    background-color: rgb(90, 196, 159);
+    border-width: thin;
+}
+
+.leftBack{
+    background-color: rgb(95, 121, 200);
+    margin-top: 10px
+}
+
+.rightBack{
+    background-color: rgb(147, 84, 167);
+}
+
+.location{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin: 0px;
+}
