@@ -84,8 +84,19 @@
 
   const uploadImages = async (images) => {
     // TODO: POST to upload.php
+    for (const image of images) {
+      const formData = new FormData();
+      formData.append('file', image);
+      const res = await fetch('upload.php', { method: 'POST', body: formData });
+      const data = await res.json();
+      if (data.success) loadImages();
+      console.log(data);
+    }
+    /*
     let s = 'NO UPLOAD, JUST SHOWING THE NAMES OF THE FILES IN AN ALERT: \n';
     [...images].forEach((image) => s += image.name + '\n');
     alert(s);
+    */
   };
+
 </script>
