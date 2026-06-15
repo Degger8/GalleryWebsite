@@ -1,25 +1,93 @@
 .text{
     font-family: "Serif", "Times New Roman";
     color: rgb(35, 35, 35);
+    text-align: center;
+    width: 100%;
 }
 
 .buttonStyle{
     background-color: rgb(90, 196, 159);
-    border-width: thin;
+
+    border-style: solid;
+    border-width: medium;
+    border-color: rgb(74, 132, 59);
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 200px;
+}
+
+.imageScroll{
+    height: 100%;
+    overflow-y: auto;
+    background-color: rgb(207, 122, 232);
+
+    border-style: solid;
+    border-width: medium;
+    border-color: rgb(0,0,0);
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imageSize{
+    max-width: 98%;
+    vertical-align: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.container{
+    width: 100%;
+}
+
+.buttonStyle:active{
+    background-color: rgb(75, 162, 132);
+    border-color: rgb(48, 87, 39);
 }
 
 .leftBack{
     background-color: rgb(95, 121, 200);
-    margin-top: 10px
+    margin-top: 10px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
 }
 
-.rightBack{
+.rightBack {
     background-color: rgb(147, 84, 167);
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 80%; /* changed background-color: rgb(147, 84, 167); */
+    display: flex;
+    flex-direction: column;
 }
 
 .location{
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
+    padding-right: 10px;
     margin: 0px;
+}
+
+.layout{
+    display: flex;
+    height: 97vH;
+}
+
+.scrollableElement{
+    height: 100%;
+    overflow-y: auto;
+    background-color: rgb(141, 164, 234);
+
+    border-style: solid;
+    border-width: medium;
+    border-color: rgb(0,0,0);
 }
