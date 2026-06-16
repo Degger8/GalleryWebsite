@@ -8,13 +8,13 @@
     font-size: 1rem;
     line-height: 1.7;
   }
-  main {
-    display: flex;
+  /* main {
+    display: block;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-  }
+  } */
   .dropzone {
     display: flex;
     flex-direction: column;

@@ -3,22 +3,21 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
-    <!-- <link rel="stylesheet" href="./CSS/stylesheet.css"> -->
-    <style> 
-      .gallery img {
-        width: 200px;
-        height: 200px;
-      }
-    </style>
+    <title>Test</title>
+    <link rel="stylesheet" href="../CSS/stylesheet.css">
   </head>
   <body>
     <main>
-      <?php include 'dropzone.php'; ?>
+      <div class='layout'>
+        <div class='leftBack location'>
+          <?php include 'dropzone.php'; ?>
+        </div>
+        <div class='rightBack location'>
+          <h1 class='text'> Bilder </h1>
+          <div class='imageScroll' id='gallery'></div>
+        </div>
+      </div>
     </main>
-
-    <div class="gallery" id="gallery"></div>
-
     <script>
       const loadImages = () => {
         fetch('get_images.php')
@@ -30,11 +29,11 @@
               const img = document.createElement('img');
               img.src = 'uploads/' + filename;
               img.alt = filename;
+              img.className = 'imageSize';
               gallery.appendChild(img);
             });
           });
       }
-
       loadImages();
     </script>
   </body>
